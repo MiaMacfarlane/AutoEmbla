@@ -1,0 +1,28 @@
+def pris():
+    hals_sølje_pris = float(input("pris på 1 halssølje: "))
+    hoved_sølje_pris = float(input("pris på 1 hovedsølje: "))
+    mansjetter_pris = float(input("pris på 1 par mansjetter: "))
+    kjede_pris = float(input("pris på 1 kjede med spyd: "))
+    sjalsfeste_pris = float(input("pris på 1 sjalsfeste: "))
+    malje_par_pris = float(input("pris på 1 par maljer: "))
+    beltespenne_pris = float(input("pris på 1 par beltespenne: "))
+    veskelås_pris = float(input("pris på 1 veskelås: "))
+
+
+    total_pris = (
+        hals_sølje_pris
+        + hoved_sølje_pris
+        + kjede_pris
+        + sjalsfeste_pris
+        + mansjetter_pris
+        + (5 * malje_par_pris)
+        + beltespenne_pris
+        + veskelås_pris
+    )
+
+    pakke_pris = 0.9 * total_pris
+
+    print("Total pris:", total_pris)
+    print("Pakkepris (10% rabatt):", pakke_pris)
+
+pris()
