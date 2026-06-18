@@ -1,0 +1,14 @@
+    total_pris = (
+        hals_sølje_pris
+        + mansjetter_pris
+        + knespenner_pris
+        + (34 * liten_knapp_pris)
+        + (22 * stor_knapp_pris)
+    )
+
+    pakke_pris = 0.9 * total_pris
+
+    print("Total pris:", total_pris)
+    print("Pakkepris (10% rabatt):", pakke_pris)
+
+pris()
